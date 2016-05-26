@@ -87,7 +87,7 @@ int Enque(StringQueue *q, char *x){
  			first = calloc(strlen(q->que[0])+1, sizeof(char *));
  			strcpy(first,q->que[0]);
 
-			for(i = 0; i < q->max; i++){
+			for(i = 1; i < q->max; i++){
 		
 				q->que[i-1] = calloc(strlen(q->que[i])+1, sizeof(char *));
 				strcpy(q->que[i-1], q->que[i]);
